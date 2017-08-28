@@ -1,0 +1,9 @@
+1. create database custom; 
+
+2. use custom;  
+
+3. create table temperature_data(date string,zipcode string, temperature int)row format delimited fields terminated by ',' stored as textfile;
+
+4.load data local inpath '/home/acadgild/Desktop/dataset_Session.txt' overwrite into table temperature_data;
+
+5. select * from temperature_data;
